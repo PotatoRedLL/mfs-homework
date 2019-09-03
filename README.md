@@ -32,22 +32,23 @@
            * Grunt、Gulp、webpack……
 ## **工具安装**
 ### **编辑器安装**
-如图所示，已安装VScode  
-![](1.png)        
+如图所示，已安装VScode    
+![](pic/1.png)        
 ### **使用 chrome**
-如图所示，已安装chrome  
-![](2.png)  
+如图所示，已安装chrome    
+![](pic/2.png)  
 ### **使用 Git**
-如图所示，已安装 Git
-![](3.png) 
-命令行创建本体仓库
-![](5.png)
-![](4.png)
+如图所示，已安装 Git   
+![](pic/3.png)   
+命令行创建本体仓库   
+![](pic/5.png)   
+![](pic/4.png)
 ## **实践题**
 ### **学会使用 Markdown 编写文档**
 如本文档所示
 ### **Git 的基本使用 和 Github 注册账号**
 账号注册及创建一个名为mfs-homework的仓库   
-![](6.png)
-![](7.png)
-最后，提交文件
+![](pic/6.png)  
+![](pic/7.png)   
+最后，提交文件   
+![](pic/8.png)  
