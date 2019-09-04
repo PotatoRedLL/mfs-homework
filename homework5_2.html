@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>homework5_2</title>
+
+    </head>
+    <body>
+        <!--邮箱，必须是合法邮箱格式，必须填写
+数字，用户填写的值必须是介于 0 到 100 直接的所有偶数
+一个可以输入进行筛选的下拉框，包含四个选项
+北京
+上海
+广州
+深圳
+    -->
+    <form action="信息.html" method="POST" enctype="multipart/form-data">
+        <div>
+            邮箱：<input type="email" required />
+        </div>
+        <div>
+            数字：<input type="text" pattern="^\d?[02468]|100$" title="必须是介于 0 到 100 直接的所有偶数"/>
+            <input type="submit" />
+        </div>
+        <div>
+            下拉框：
+            <input list="city" />
+            <datalist id="city">
+                <option>北京</option>
+                <option>上海</option>
+                <option>广州</option>
+                <option>深圳</option>
+            </datalist>
+        </div>
+    </form>
+    </body>
+</html>

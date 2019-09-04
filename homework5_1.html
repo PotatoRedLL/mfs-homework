@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>homework4</title>
+    </head>
+    <body>
+        <h2>&lt;input&gt;练习</h2>
+        <form action="信息.html" method="POST" enctype="multipart/form-data" >
+            <!-- 隐藏域使用 -->
+            <div><input type="hidden"/></div>
+            <div>
+            <!-- text使用 -->
+                用户名:<input type="text"/>
+            </div>
+            <div>
+                <!-- password使用 -->
+                密码:<input type="password"/>
+            </div>
+            <div>
+                <!-- 单选框使用 -->
+                性别:<input type="radio" name="sex" value="1" />男、<input type="radio" name="sex" value="2" />女
+            </div>
+            <div>
+                <!-- 多选框使用 -->
+                技能:<input type="checkbox" name="skill" value="html" />HTML、<input type="checkbox" name="skill" value="css" />CSS、<input type="checkbox" name="skill" value="js" />Javascript
+            </div>
+            <div>
+                <!-- 图片使用-->
+                <input type="image" src="例图.png" alt="提交" />
+            </div>
+            <div>
+                <!-- 文件使用-->
+                打开：<input type="file" />
+            </div>
+            <div>
+                <!-- 提交、重置、按钮的使用-->
+                <input type="submit" value="提交"/>
+                <input type="reset" value="重置" />
+                <input type="button" value="空按钮" />
+            </div>
+            <!-- 新增控件-->
+            <div>
+                时间：<input type="time"/><input type="date" />
+            </div>
+            <div>
+                邮箱：<input type="email" required/>
+            </div>
+            <div>
+                数字：<input type="number" />
+            </div>
+            <div>
+                范围：<input type="range" />
+            </div>
+            <div>
+                网址：<input type="url" />
+            </div>
+
+        </form>
+    </body>
+</html>
