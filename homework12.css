@@ -1,0 +1,20 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+span{
+  position: relative;
+}
+span:hover{
+  color: red;
+}
+ul{
+  display: none;
+  list-style-type: none;
+}
+span:hover ul{
+  display: block;
+  position: absolute;
+  top: 18px;
+  left: 0px;
+}
