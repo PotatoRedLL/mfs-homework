@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homework17_1</title>
+    <style>
+        .HolyGrail {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        }
+
+        header,footer {
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        flex: 1;
+        background-color: grey;
+        }
+
+        .HolyGrail-body {
+        display:flex;
+
+        justify-content:space-between;
+        margin: 10px 0px;
+        /* 自适应放大 */
+        flex: 1;
+        }
+
+        .HolyGrail-content {
+        /* 自适应放大 */
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;
+        flex: 1;
+        background-color:deepskyblue;
+        
+        }
+
+        .HolyGrail-left, .HolyGrail-right {   
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        text-align:center;  
+        flex: 0 0 100px;
+        background-color:deepskyblue;
+        }
+        .HolyGrail-left{
+            margin-right: 10px;
+        }
+        .HolyGrail-right{
+            margin-left: 10px;
+        }
+        .HolyGrail-left {
+        /* 放到最左边 */
+        order: -1;
+        }
+    </style>
+</head>
+<body class="HolyGrail">
+    <header>头部</header>
+    <div class="HolyGrail-body">
+        <main class="HolyGrail-content">主内容自适应宽度</main>
+        <nav class="HolyGrail-left">侧边栏1固定宽度</nav>
+        <aside class="HolyGrail-right">侧边栏2固定宽度</aside>
+    </div>
+
+    <footer>底部</footer>
+</body>
+</html>
