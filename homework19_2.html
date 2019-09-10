@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            box-sizing: border-box;
+
+            position: relative;
+
+            margin: 50px;
+            padding: 20px;
+            width: 220px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+        .container::before{
+            content: "";
+            width: 40px;
+            height: 40px;
+            background-color: #ffea00;
+            
+            position: absolute;
+            z-index: 1;
+            border-radius: 50%;
+            left: -20px;
+            top: 30px;
+        }
+        .container::after{
+            content: "";
+            width: 0px;
+            height: 0px;
+            border:20px solid transparent;
+            
+            position: absolute;
+            z-index: 1;
+            border-right:20px solid  #ffea00;
+            right: 20px;
+            top: -15px;
+            transform: rotate(-16deg);
+        }
+        .text-en{
+            font-size: 12px;
+            width: 100%;
+        }
+        .text-ch{
+            margin-top: 8px;
+            font-size: 28px;
+            line-height: 1.15;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="text-en">SHARED COURSE</span>
+        <span class="text-ch">课堂分享</span>
+    </div>
+
+</body>
+</html>
