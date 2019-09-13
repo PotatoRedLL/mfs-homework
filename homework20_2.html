@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homework20_2</title>
+    <style>
+        @media screen and (min-width: 768px) {
+            .style {
+                float: left;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .style {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            #dropdown-menu {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #505050;
+            font-weight: 400;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .nav-header {
+            display: inline-block;
+            padding: 10px 10px;
+            margin: 0px;
+            border: 1px solid #ddd;
+        }
+
+        .nav-con {
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-con>li {
+            display: inline-block;
+            padding: 10px 10px;
+            margin: 0px;
+            border: 1px solid #ddd;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle {
+            position: relative;
+        }
+
+        #dropdown-menu {
+
+            display: none;
+            border: 1px solid #ddd;
+            white-space: nowrap;
+            position: absolute;
+            padding: 0;
+            margin: 0;
+            top: 100%;
+            left: 0;
+        }
+
+        #dropdown-menu li {
+            padding: 5px 10px;
+        }
+
+        #dropdown-menu .divider {
+            height: 0;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #ddd;
+        }
+
+        .caret {
+            border: 5px solid transparent;
+            border-top-color: black;
+            position: absolute;
+            top: 50%;
+            right: 0%;
+        }
+    </style>
+    <script type="text/javascript">
+        function display() {
+            var traget = document.getElementById('dropdown-menu');
+            if (traget.style.display == "none") {
+                traget.style.display = "block";
+            } else {
+                traget.style.display = "none";
+            }
+        } 
+    </script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-header style">
+            <a class="nav-brand" href="#">菜鸟教程</a>
+        </div>
+        <div>
+            <ul class="nav-con">
+                <li class="style"><a href="#">iOS</a></li>
+                <li class="style"><a href="#">SVN</a></li>
+                <li class="dropdown style">
+                    <a href="#" class="dropdown-toggle" onclick="display()">
+                        Java&nbsp;&nbsp;&nbsp;
+                        <b class="caret"></b>
+                    </a>
+                    <ul id="dropdown-menu">
+                        <li><a href="#">jmeter</a></li>
+                        <li><a href="#">EJB</a></li>
+                        <li><a href="#">Jasper Report</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">分离的链接</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">另一个分离的链接</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>
