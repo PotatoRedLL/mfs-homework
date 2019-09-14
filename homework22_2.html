@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>homework22_2</title>
+    <style>
+        .container {
+            display: block;
+            height: 100vh;
+            position: relative
+        }
+
+        .content {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            animation: rotate 2s linear infinite;
+            transform-origin: 10px 22.5px;
+        }
+
+        .circle {
+            position: absolute;
+            top: 4px;
+            left: 0;
+        }
+
+        .circle:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        .circle:nth-child(1) .s_cir {
+            background: #1f4e5a;
+            margin: 0 auto;
+        }
+
+        .circle .s_cir:nth-child(1) {
+            width: 20px;
+            height: 20px;
+            animation: move 1.5s ease-in-out infinite;
+        }
+
+        .circle .s_cir:nth-child(2) {
+            width: 15px;
+            height: 15px;
+            animation: move 1.5s ease-in-out infinite;
+            animation-delay: 150ms;
+        }
+
+        .circle .s_cir:nth-child(3) {
+            width: 10px;
+            height: 10px;
+            animation: move 1.5s ease-in-out infinite;
+            animation-delay: 300ms;
+        }
+
+        .circle:nth-child(2) .s_cir {
+            background: #ffb265;
+        }
+
+        .circle:nth-child(2) {
+            transform: rotate(90deg);
+        }
+
+        .circle:nth-child(3) .s_cir {
+            background: #ff5955;
+        }
+
+        .circle:nth-child(3) {
+            transform: rotate(180deg);
+        }
+
+        .circle:nth-child(4) .s_cir {
+            background: #00a691;
+        }
+
+        .circle:nth-child(4) {
+            transform: rotate(270deg);
+        }
+
+        .s_cir {
+            border-radius: 50%;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(0, -80px);
+            }
+
+            50% {
+                transform: translate(0, 0);
+            }
+
+            75% {
+                transform: translate(0, 20px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        @keyframes  rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="circle">
+                <div class="s_cir"></div>
+                <div class="s_cir"></div>
+                <div class="s_cir"></div>
+            </div>
+            <div class="circle">
+                <div class="s_cir"></div>
+                <div class="s_cir"></div>
+                <div class="s_cir"></div>
+            </div>
+            <div class="circle">
+                <div class="s_cir"></div>
+                <div class="s_cir"></div>
+                <div class="s_cir"></div>
+            </div>
+            <div class="circle">
+                <div class="s_cir"></div>
+                <div class="s_cir"></div>
+                <div class="s_cir"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
